@@ -1,0 +1,20 @@
+armor: true
+debug: false
+dont_spam_chat: false
+enderchest: true
+no_drops: false
+no_falling_drops: false
+no_pickups: false
+remove_potions: true
+restrict_creative: false
+save_on_death: true
+survival_on_world_change: false
+xp: true
+track_creative_place:
+  enabled: true
+  break_no_drop: false
+creative_blacklist: false
+blacklist:
+- TNT
+- BEDROCK
+- LAVA_BUCKET
