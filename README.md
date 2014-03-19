@@ -1,9 +1,7 @@
-Plugins
-=======
-
-Plugins files for Laerad Acies Pvp server
-
+Laerad Acies Plugin Files
 ===
+**To-Do List**
+☐ Upload all plugin data
 
 **Current Plugins**
 ```
@@ -26,7 +24,7 @@ WorldEdit
 WorldGuard
 ```
 
-***Removed Plugins***
+**Removed Plugins**
 ```
 Multiverse-Core
 Multiverse-Portals
