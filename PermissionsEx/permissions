@@ -1,0 +1,221 @@
+groups:
+  Guest:
+    default: true
+    prefix: '&8[&a-&8]&a'
+    permissions:
+    - modifyworld.chat
+    - essentials.help
+    - essentials.list
+    - essentials.motd
+    - essentials.rules
+    - essentials.spawn
+    - modifyworld.login
+    - modifyworld.chat
+    - bukkit.broadcast.user
+    options:
+      rank: '1000'
+  Member:
+    prefix: '&8[&9o&8]&9'
+    permissions:
+    - bukkit.command.plugins
+    - bukkit.command.tell
+    - essentials.kit.member
+    - essentials.kit
+    - essentials.balance
+    - essentials.pay
+    - essentials.worth
+    - essentials.afk
+    - essentials.compass
+    - essentials.helpop
+    - essentials.helpop.receive
+    - essentials.ignore
+    - essentials.info
+    - essentials.list
+    - essentials.motd
+    - essentials.msg
+    - essentials.recipe
+    - essentials.seen
+    - essentials.suicide
+    - essentials.clearinventory
+    - essentials.ping
+    - essentials.delhome
+    - essentials.home
+    - essentials.home.bed
+    - essentials.sethome
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.tptoggle
+    - essentials.warp.list
+    - essentials.warp
+    - essentials.warps.ranks
+    - essentials.build
+    - essentials.warps.survival
+    - essentials.warps.rules
+    - multiverse.access.world
+    - multiverse.access.Lobby
+    - multiverse.access.world_nether
+    - multiverse.access.world_the_end
+    - multiverse.portal.access.ranks
+    - multiverse.portal.access.survival
+    - multiverse.portal.access.rules
+    - playervaults.size.3
+    - playervaults.amount.1
+    - scs.create.buy
+    - scs.create.sell
+    - scs.use
+    - scs.manage
+    - scs.remove
+    - chestcommands.command.open
+    - chestcommands.command.list
+    - modifyworld.*
+    - worldedit.navigation.unstuck
+    - worldedit.help
+    - essentials.sethome.multiple.member
+    options:
+      rank: '900'
+    inheritance:
+    - Guest
+  Trusted:
+    prefix: '&8[&1+&8]&1'
+    permissions:
+    - bukkit.command.me
+    - bukkit.command.list
+    - essentials.depth
+    - essentials.list
+    - essentials.me
+    - essentials.top
+    - essentials.tpahere
+    - essentials.tptoggle
+    - iDisguise.undisguise
+    - iDisguise.cow
+    - iDisguise.chicken
+    - iDisguise.sheep
+    - iDisguise.pig
+    - scs.create.display
+    - scs.create.exchange
+    - signcolours.l
+    - signcolours.m
+    - signcolours.n
+    - signcolours.o
+    - signcolours.r
+    - worldedit.region.naturalize
+    - worldedit.selection.pos
+    - worldedit.wand
+    - worldedit.selection.hpos
+    - worldedit.wand.toggle
+    - worldedit.selection.size
+    - worldedit.analysis.count
+    - worldedit.history.undo
+    - worldedit.history.redo
+    - worldedit.history.clear
+    - essentials.sethome.multiple.trusted
+    options:
+      rank: '500'
+    inheritance:
+    - Member
+  Elite:
+    prefix: '&8[&b%&8]&b'
+    permissions:
+    - playervaults.size.6
+    - playervaults.amount.1
+    - essentials.break
+    - essentials.feed
+    - essentials.hat
+    - essentials.ptime
+    - essentials.workbench
+    - essentials.sell
+    - essentials.getpos
+    - essentials.msg.color
+    - essentials.nick
+    - essentials.enderchest
+    - essentials.ext
+    - essentials.chat.color
+    - iDisguise.ocelot
+    - iDisguise.snowman
+    - iDisguise.villager
+    - iDisguise.wolf
+    - iDisguise.zombie
+    - iDisguise.mushroom_cow
+    - iDisguise.skeleton
+    - iDisguise.slime
+    - iDisguise.spider
+    - playervaults.size.6
+    - playervaults.amount.1
+    - signcolours.*
+    - slap.use
+    - worldedit.navigation.ascend
+    - worldedit.navigation.descend
+    - worldedit.navigation.jumpto.command
+    - worldedit.navigation.ceiling
+    - worldedit.region.smooth
+    - worldedit.region.set
+    - worldedit.region.replace
+    - essentials.sethome.multiple.elite
+    options:
+      rank: '500'
+    inheritance:
+    - Trusted
+  Moderator:
+    prefix: '&8[&6#&8]&6'
+    permissions:
+    - bukkit.command.*
+    - essentials.sethome.multiple.moderator
+    options:
+      rank: '300'
+    inheritance:
+    - Elite
+  Admin:
+    prefix: '&8[&c@&8]&c'
+    permissions:
+    - Essentials.*
+    - iDisguise.*
+    - Multiverse.*
+    - WorldEdit.*
+    - WorldGuard.
+    - VoidGenerator.*
+    - SignColours.*
+    - Itemizer.*
+    - enchanter.*
+    - essentials.sethome.multiple.admin
+    options:
+      rank: '200'
+    inheritance:
+    - Moderator
+  Owner:
+    prefix: '&8[&c-=&4@&c=-&8]&c'
+    permissions:
+    - BarAPI.*
+    - BossBar.*
+    - Essentials.*
+    - iDisguise.*
+    - Multiverse.*
+    - Permissions.*
+    - WorldEdit.*
+    - WorldGuard.*
+    - VoidGenerator.*
+    - SignColours.*
+    - Itemizer.*
+    - enchanter.*
+    - bukkit.*
+    - essentials.sethome.multiple.staff
+    options:
+      rank: '100'
+    inheritance:
+    - Admin
+  Developer:
+    prefix: '&8[&5>&c@&5<&8]&5'
+    options:
+      rank: '201'
+    inheritance:
+    - Owner
+  Coder:
+    prefix: '&8[&7{&c@&7}&8]&7'
+    options:
+      rank: '201'
+    inheritance:
+    - Owner
+users:
+  minimitch0199:
+    group:
+    - Owner
