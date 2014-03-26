@@ -204,7 +204,7 @@ groups:
     inheritance:
     - Admin
   Developer:
-    prefix: '&8[&5>&c@&5<&8]&5'
+    prefix: '&8[&4D&6ev@&5<&8]&5'
     options:
       rank: '201'
     inheritance:
